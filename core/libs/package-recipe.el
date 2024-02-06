@@ -60,8 +60,8 @@
 (defclass package-git-recipe (package-recipe) ())
 
 (defclass package-github-recipe (package-git-recipe)
-  ((url-format      :initform "https://github.com/%s.git")
-   (repopage-format :initform "https://github.com/%s")))
+  ((url-format      :initform "https://bgithub.xyz/%s.git")
+   (repopage-format :initform "https://bgithub.xyz/%s")))
 
 (defclass package-gitlab-recipe (package-git-recipe)
   ((url-format      :initform "https://gitlab.com/%s.git")

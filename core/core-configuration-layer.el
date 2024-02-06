@@ -85,11 +85,11 @@ the lock file.")
 the .lock file at the root of the repository.")
 
 (defconst configuration-layer--stable-elpa-tarball-directory
-  "https://github.com/syl20bnr/spacelpa/archive/"
+  "https://bgithub.xyz/syl20bnr/spacelpa/archive/"
   "Remote location of the tarball for the ELPA stable directory")
 
 (defconst configuration-layer--stable-elpa-sig-directory
-  "https://github.com/syl20bnr/spacelpa/releases/download/"
+  "https://bgithub.xyz/syl20bnr/spacelpa/releases/download/"
   "Remote location of the signature file for the ELPA stable directory")
 
 (defconst configuration-layer--stable-elpa-gpg-keyring
@@ -1084,7 +1084,7 @@ a new object."
               (save-excursion
                 (re-search-backward "`\\([^`']+\\)'" nil t)
                 (help-xref-button
-                 1 'help-url "https://github.com/quelpa/quelpa")))
+                 1 'help-url "https://bgithub.xyz/quelpa/quelpa")))
             (princ location)
             (princ "\n"))))
         ;; pre/post init functions

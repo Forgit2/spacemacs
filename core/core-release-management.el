@@ -199,7 +199,7 @@ version and the NEW version."
 (defun spacemacs//get-last-version (repo owner remote branch)
   "Return the last tagged version of BRANCH on REMOTE repository from
 OWNER REPO."
-  (let ((url (format "https://github.com/%s/%s" owner repo)))
+  (let ((url (format "https://bgithub.xyz/%s/%s" owner repo)))
     (spacemacs//git-remove-remote remote)
     (spacemacs//git-add-remote remote url)
     ;; removing this call according to issue #6692 proposal

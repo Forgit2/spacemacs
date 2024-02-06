@@ -143,7 +143,7 @@ If nil the update is disabled and the repo is only updated on
   :group 'quelpa
   :type 'boolean)
 
-(defcustom quelpa-melpa-repo-url "https://github.com/melpa/melpa.git"
+(defcustom quelpa-melpa-repo-url "https://bgithub.xyz/melpa/melpa.git"
   "The melpa git repository url."
   :group 'quelpa
   :type 'string)
@@ -1024,7 +1024,7 @@ This will perform an checkout or a reset if FORCE."
 
 (defun quelpa-build--checkout-github (name config dir)
   "Check package NAME with config CONFIG out of github into DIR."
-  (let ((url (format "https://github.com/%s.git" (plist-get config :repo))))
+  (let ((url (format "https://bgithub.xyz/%s.git" (plist-get config :repo))))
     (quelpa-build--checkout-git name (plist-put (copy-sequence config) :url url) dir)))
 
 (defun quelpa-build--checkout-github-ssh (name config dir)
